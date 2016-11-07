@@ -18,11 +18,13 @@
 <!--Not Considered an empty item-->
          <div class="form-group">
              <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch(empty item not considered)"
+             placeholder="list comma separated dishes you usually have for lunch"
              class="form-control"
              ng-model="lunchmenu"
              style="border-color:{{mycolor}};">
          </div>
+         <p>Description:Bonus part implemented as well.Space between commas will be viewed as empty item</p>
+
          <div class="form-group">
              <button class="btn btn-default" ng-click="displayLunchMenu()">Check If Too Much</button>
          </div>
